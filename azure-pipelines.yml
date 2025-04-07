@@ -2,7 +2,7 @@ trigger:
 - main
 
 pool:
-  name: Quiz4Pool  # ✅ Your self-hosted agent pool
+  name: Quiz4Pool  # self-hosted agent pool
 
 variables:
   buildConfiguration: 'Release'
@@ -19,7 +19,7 @@ steps:
   displayName: 'Restore NuGet packages'
   inputs:
     command: 'restore'
-    projects: '**/*.csproj'  # ✅ wildcard to find your .csproj automatically
+    projects: '**/*.csproj'  
 
 - task: DotNetCoreCLI@2
   displayName: 'Build project'
