@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\KaraQuiz4WebApp.props" />
+</Project>
